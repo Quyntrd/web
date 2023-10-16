@@ -1,82 +1,76 @@
-html{
-    background-image: url("img/retrowave.jpg");
-    background-size:100%;
-    padding:10px;
-    background-position:inherit;
-    background-repeat: no-repeat;
 
-}
 .avatar{
-    width: 100px;
+    width: 200px;
     height:auto;
 }
   body {
-    padding: 30px 30px;
+    background-image: url("img/retrowave.jpg");
+    background-size:100%;
+    background-position:inherit;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-size: 14px;
     line-height: 22px;
     font-family: "Arial", serif;
     color: #e4d6d6;
   }
   
-  h1 {
-    font-size: 36px;
-    line-height: normal;
-  }
-  
-  h2 {
-    font-size: 20px;
-    line-height: normal;
-  }
-  
-  a {
-    color: #0099ef;
-    text-decoration: underline;
-  }
-  
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  header{
-    display:flex;
-    position: relative;
-    height: 50px;
+
+
+  .navigation{
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:50px;
+    align-items: center;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .navigation-list {
-    display: flex;
-    justify-content: space-between;
+    list-style-type:none;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
     margin: 0;
     padding: 0;
   }
-  
-  .flex-container > div {
-    margin-bottom: auto;
-    padding: 15px;
-    font-size: 30px;
+  .navigation-link{
+    display: block;
+    margin: 5px;
+    padding:15px;
   }
-  .grid-container {
+  .page-main {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 100px 0.5fr 0.5fr;
     grid-template-areas: "avatar name name"
-                          "description email phone "
-                          "skills skills social";
-    gap: 15px;
+                          "avatar email phone "
+                          "description description qr";
+    gap: 20px;
     padding: 20px;
+    
   }
   
-  .grid-container > div {
-    font-size: 20px;
-  }
   
   .avatar {
     grid-area:avatar;
   }
   .description{
-    grid-area: decription;
+    grid-area: description;
   }
   .skills{
    grid-area: skills; 
   }
+  .phone{
+    grid-area: phone;
+  }
+  .email{
+    grid-area: email;
+  }
+  .qr{
+    margin-left:auto;
+    align-self: end;
+    grid-area: qr;
+  }
   .social{
-    grid-area: social;
+    color: #00c7ef;
+    text-decoration: underline;
   }
