@@ -1,76 +1,93 @@
 
-.avatar{
-    width: 200px;
-    height:auto;
+body {
+  height: 100%;
+  background-size:cover;
+  background-position:inherit;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 18px;
+  font-family: "Arial", serif;
+  color: #e4d6d6;
+  background-image: url("img/retrowave.jpg");
 }
-  body {
-    background-image: url("img/retrowave.jpg");
-    background-size:100%;
-    background-position:inherit;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-size: 14px;
-    line-height: 22px;
-    font-family: "Arial", serif;
-    color: #e4d6d6;
-  }
-  
+.navigation{
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap:50px;
+  align-items: center;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.navigation-list {
+  list-style-type:none;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.navigation-link{
+  color:azure;
+  text-decoration: none;
+  display: block;
+  margin: 5px;
+  padding:15px;
+}
+.page-main {
+  display: grid;
+  grid-template-columns: 10% 30% 30%;
+  grid-template-areas: "avatar name name"
+                        "avatar email phone "
+                        "description description description";
+  gap: 20px;
+  padding: 20px; 
+  margin:20px;  
+}  
+.name{
+  grid-area: name;
+  font-size: large;
+}
+.avatar {
+  grid-area:avatar;
+  width: 10%;
+  height:auto;
+}
+.description{
+  grid-area: description;
+}
+.skills{
+  grid-area: skills; 
+}
+.phone{
+  color:aqua;
+  text-decoration:none;
+  grid-area: phone;
+}
+.email{
+  grid-area: email;
+  color:aqua;
+  text-decoration:none;
+}
 
-
-  .navigation{
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap:50px;
-    align-items: center;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .navigation-list {
-    list-style-type:none;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  .navigation-link{
-    display: block;
-    margin: 5px;
-    padding:15px;
-  }
-  .page-main {
-    display: grid;
-    grid-template-columns: 100px 0.5fr 0.5fr;
-    grid-template-areas: "avatar name name"
-                          "avatar email phone "
-                          "description description qr";
-    gap: 20px;
-    padding: 20px;
-    
-  }
+.page-footer {
+  position: absolute;
+  bottom: 0;
+  display: grid;  
+  width: 90%;
+  grid-template-columns: 10% 30% 30%;
+  grid-template-areas: "social social qr";
+  gap: 20px;
+  padding: 20px;  
+}
   
-  
-  .avatar {
-    grid-area:avatar;
-  }
-  .description{
-    grid-area: description;
-  }
-  .skills{
-   grid-area: skills; 
-  }
-  .phone{
-    grid-area: phone;
-  }
-  .email{
-    grid-area: email;
-  }
-  .qr{
-    margin-left:auto;
-    align-self: end;
-    grid-area: qr;
-  }
-  .social{
-    color: #00c7ef;
-    text-decoration: underline;
-  }
+.social-list{
+  grid-area:social;
+}
+.social{
+  color: #00c7ef;
+  text-decoration: underline;
+}
+.qr{
+  margin-right:auto;
+  grid-area: qr;
+}
