@@ -7,7 +7,7 @@ body {
   background-attachment: fixed;
   font-size: 18px;
   font-family: "Arial", serif;
-  color: #e4d6d6;
+  color: azure;
   background-image: url("img/retrowave.jpg");
 }
 .navigation{
@@ -26,12 +26,21 @@ body {
   margin: 0;
   padding: 0;
 }
-.navigation-link{
-  color:azure;
-  text-decoration: none;
+.navigation-item{
+  background-color:rgb(110, 110, 110);
+  border-style: solid;
+  border-color: rgb(50, 53, 53);
+  border-radius: 20px;
+  opacity: 0.8;
   display: block;
   margin: 5px;
   padding:15px;
+}
+.navigation-link{
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: azure;
 }
 .page-main {
   display: grid;
@@ -54,6 +63,7 @@ body {
 }
 .description{
   grid-area: description;
+  color:rgb(255, 255, 255);
 }
 .skills{
   grid-area: skills; 
@@ -74,7 +84,7 @@ body {
   bottom: 0;
   display: grid;  
   width: 90%;
-  grid-template-columns: 10% 30% 30%;
+  grid-template-columns: 10% 50% 10%;
   grid-template-areas: "social social qr";
   gap: 20px;
   padding: 20px;  
@@ -84,7 +94,7 @@ body {
   grid-area:social;
 }
 .social{
-  color: #00c7ef;
+  color: aqua;
   text-decoration: underline;
 }
 .qr{
