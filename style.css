@@ -1,0 +1,81 @@
+html{
+    background-image: url("img/retrowave.jpg");
+    background-size:100%;
+}
+img{
+    width: 35%;
+    height: 95%;
+}
+body {
+    padding: 0 30px;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Arial", serif;
+    color: #e4d6d6;
+  }
+  
+  h1 {
+    font-size: 36px;
+    line-height: normal;
+  }
+  
+  h2 {
+    font-size: 20px;
+    line-height: normal;
+  }
+  
+  a {
+    color: #0099ef;
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  header{
+    display:flex;
+    position: relative;
+    height: 50px;
+  }
+  .flex-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-container > div {
+    margin: 1%;
+    padding: 1%;
+    font-size: 30px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    font-size: 20px;
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: left;
+  }
+  .item2{
+    grid-column-start: 2;
+    grid-column-end:2;
+    text-align: left;
+  }
+  .item3{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+    text-align: left;
+  }
