@@ -1,6 +1,5 @@
 
 body {
-  height: 100%;
   background-size:cover;
   background-position:inherit;
   background-repeat: no-repeat;
@@ -27,14 +26,15 @@ body {
   padding: 0;
 }
 .navigation-item{
-  background-color:rgb(110, 110, 110);
+
   border-style: solid;
   border-color: rgb(50, 53, 53);
   border-radius: 20px;
-  opacity: 0.8;
   display: block;
   margin: 5px;
-  padding:15px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(0,0,0, 0.3);
 }
 .navigation-link{
   padding: 10px;
@@ -51,53 +51,72 @@ body {
   gap: 20px;
   padding: 20px; 
   margin:20px;  
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(0,0,0, 0.3);
 }  
 .name{
   grid-area: name;
   font-size: large;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(0,0,0, 0.3);
 }
 .avatar {
   grid-area:avatar;
-  width: 10%;
-  height:auto;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(0,0,0, 0.3);
+  margin: auto;
 }
 .description{
   grid-area: description;
   color:rgb(255, 255, 255);
-}
-.skills{
-  grid-area: skills; 
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(0,0,0, 0.3);
 }
 .phone{
   color:aqua;
   text-decoration:none;
   grid-area: phone;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(0,0,0, 0.3);
+  margin: auto;
 }
 .email{
   grid-area: email;
   color:aqua;
   text-decoration:none;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(0,0,0, 0.3);
+  margin: auto;
 }
 
 .page-footer {
   position: absolute;
   bottom: 0;
   display: grid;  
-  width: 90%;
-  grid-template-columns: 10% 50% 10%;
+  grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-areas: "social social qr";
   gap: 20px;
-  padding: 20px;  
+  margin:20px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(0,0,0, 0.3);
 }
   
 .social-list{
   grid-area:social;
+  margin: auto;
 }
 .social{
   color: aqua;
   text-decoration: underline;
 }
 .qr{
-  margin-right:auto;
+  margin-left: auto;
   grid-area: qr;
 }
