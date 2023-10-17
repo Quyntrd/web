@@ -37,10 +37,12 @@ body {
   background-color: rgba(0,0,0, 0.3);
 }
 .navigation-link{
-  padding: 10px;
-  margin: 10px;
+  padding:2px;
+  margin: auto;
   text-decoration: none;
   color: azure;
+  border-radius: 6px;
+  background-color: rgba(0,0,0, 0.3);
 }
 .page-main {
   display: grid;
@@ -57,10 +59,13 @@ body {
 }  
 .name{
   grid-area: name;
+  margin-right: auto;
   font-size: large;
   padding: 10px;
   border-radius: 6px;
   background-color: rgba(0,0,0, 0.3);
+  margin-top:auto;
+  margin-bottom:auto;
 }
 .avatar {
   grid-area:avatar;
@@ -83,7 +88,9 @@ body {
   padding: 10px;
   border-radius: 6px;
   background-color: rgba(0,0,0, 0.3);
-  margin: auto;
+  margin-right: auto;
+  margin-top:auto;
+  margin-bottom:auto;
 }
 .email{
   grid-area: email;
@@ -92,7 +99,9 @@ body {
   padding: 10px;
   border-radius: 6px;
   background-color: rgba(0,0,0, 0.3);
-  margin: auto;
+  margin-right: auto;
+  margin-top:auto;
+  margin-bottom:auto;
 }
 
 .page-footer {
