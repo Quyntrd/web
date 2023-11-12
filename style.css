@@ -35,13 +35,18 @@ body {
   border-radius: 6px;
   background-color: rgba(0,0,0, 0.3);
 }
+.navigation-list a:hover{
+  color: rgba(255, 187, 0, 0.7);
+}
+.navigation-list a:active{
+  color: rgba(255, 187, 0, 0.5);
+}
 .navigation-link{
   padding:2px;
   margin: auto;
   text-decoration: none;
   color: azure;
   border-radius: 6px;
-  background-color: rgba(0,0,0, 0.3);
 }
 .page-main {
   display: grid;
@@ -54,39 +59,34 @@ body {
   margin:20px;  
   padding: 10px;
   border-radius: 6px;
+  border-style: solid;
+  border-color: rgba(50, 53, 53, 0.8);
   background-color: rgba(0,0,0, 0.3);
 }  
+.page-item{
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgba(0,0,0, 0.3);
+}
 .name{
   grid-area: name;
   margin-right: auto;
   font-size: large;
-  padding: 10px;
-  border-radius: 6px;
-  background-color: rgba(0,0,0, 0.3);
   margin-top:auto;
   margin-bottom:auto;
 }
 .avatar {
   grid-area:avatar;
-  padding: 10px;
-  border-radius: 6px;
-  background-color: rgba(0,0,0, 0.3);
   margin: auto;
 }
 .description{
   grid-area: description;
   color:rgb(255, 255, 255);
-  padding: 10px;
-  border-radius: 6px;
-  background-color: rgba(0,0,0, 0.3);
 }
 .phone{
   color:aqua;
   text-decoration:none;
   grid-area: phone;
-  padding: 10px;
-  border-radius: 6px;
-  background-color: rgba(0,0,0, 0.3);
   margin-right: auto;
   margin-top:auto;
   margin-bottom:auto;
@@ -95,26 +95,28 @@ body {
   grid-area: email;
   color:aqua;
   text-decoration:none;
-  padding: 10px;
-  border-radius: 6px;
-  background-color: rgba(0,0,0, 0.3);
   margin-right: auto;
   margin-top:auto;
   margin-bottom:auto;
 }
 
 .page-footer {
-  position: absolute;
+  position:absolute;
   bottom: 0;
+  width:95%;
   display: grid;  
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "social1 social2 qr"
-  "social3 social4 qr";
+  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 1fr;
+  grid-template-areas: 
+  "contact contact contact contact qr"
+  "social1 social2 social3 social4 qr";
   gap: 20px;
   margin:20px;
   padding: 10px;
   border-radius: 6px;
   background-color: rgba(0,0,0, 0.3);
+}
+.contact{
+  grid-area: contact;
 }
   
 .social-list{
@@ -139,6 +141,109 @@ body {
   grid-area: social4;
 }
 .qr{
-  margin: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-top: auto;
   grid-area: qr;
 }
+
+.social-img a:hover{
+  color: rgba(255, 187, 0, 0.7);
+}
+.social-img a:active{
+  color: rgba(255, 187, 0, 0.7);
+}
+
+.page-main-cv {
+  display: grid;
+  grid-template-columns:1fr 1fr 0.8fr;
+  grid-template-areas:
+  "name name name"
+  "title1 phone photo"
+  "title2 email photo"
+  "title3 age photo"
+  "title4 place photo"
+  "title5 citizenship photo"
+  "title6 langs photo"
+  "title7 education education"
+  "title8 skill skill";
+  gap: 20px;
+  padding: 20px; 
+  margin:20px;  
+  padding: 10px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgba(50, 53, 53, 0.8);
+  background-color: rgba(0,0,0, 0.3);
+}
+.page-item-cv{
+  border-bottom: 3px dotted rgba(0, 0, 0, 0.8); 
+}
+.page-main-cv .name{
+  font-size: 30px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.8); 
+}
+.page-main-cv .photo{
+  grid-area: photo;
+  margin:auto;
+}
+.page-main-cv img{
+  max-width:300px;
+}
+.page-main-cv .title1{
+  grid-area: title1;
+}
+.page-main-cv .title2{
+  grid-area: title2;
+}
+.page-main-cv .title3{
+  grid-area: title3;
+}
+.page-main-cv .title4{
+  grid-area: title4;
+}
+.page-main-cv .title5{
+  grid-area: title5;
+}
+.page-main-cv .title6{
+  grid-area: title6;
+}
+.page-main-cv .title7{
+  grid-area: title7;
+}
+.page-main-cv .title8{
+  grid-area: title8;
+}
+.page-main-cv .phone{
+  grid-area: phone;
+}
+.page-main-cv .email{
+  grid-area: email;
+}
+.page-main-cv .age{
+  grid-area:age;
+}
+.page-main-cv .place{
+  grid-area: place;
+}
+.page-main-cv .citizenship{
+  grid-area: citizenship;
+}
+.page-main-cv .langs{
+  grid-area: langs;
+}
+.page-main-cv .education{
+  grid-area: education;
+}
+.page-main-cv .skill{
+  grid-area: skill;
+}
+.page-main-cv .skill ul{
+  grid-area: skill;
+  margin-block-start: 0;
+  padding-inline-start: 20px;
+}
+
+
+
+
