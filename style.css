@@ -50,10 +50,11 @@ body {
 }
 .page-main {
   display: grid;
-  grid-template-columns: 15% 40% 30%;
-  grid-template-areas: "avatar name name"
-                        "avatar email phone "
-                        "description description description";
+  grid-template-columns: 0.1fr 0.5fr 0.5fr 0.1fr;
+  grid-template-rows: 0.1fr 0.1fr 0.8fr;
+  grid-template-areas: "avatar name name gif"
+                        "avatar email phone gif"
+                        "description description description gif";
   gap: 20px;
   padding: 20px; 
   margin:20px;  
@@ -99,20 +100,32 @@ body {
   margin-top:auto;
   margin-bottom:auto;
 }
-
+.email:hover{
+  color: rgba(255, 187, 0, 0.7);
+}
+.email:active{
+  color: rgba(255, 187, 0, 0.7);
+}
+.phone:hover{
+  color: rgba(255, 187, 0, 0.7);
+}
+.phone:active{
+  color: rgba(255, 187, 0, 0.7);
+}
 .page-footer {
   position:absolute;
   bottom: 0;
   width:95%;
   display: grid;  
-  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 1fr;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 2fr;
+  grid-template-rows: 0.5fr 0.1fr;
   grid-template-areas: 
   "contact contact contact contact qr"
   "social1 social2 social3 social4 qr";
   margin:20px;
   padding: 10px;
   border-radius: 6px;
-  background-color: rgba(0,0,0, 0.3);
+  background-color: rgba(0,0,0, 0.7);
 }
 .contact{
   grid-area: contact;
@@ -146,26 +159,26 @@ body {
   grid-area: qr;
 }
 
-.social-img a:hover{
+.social:hover{
   color: rgba(255, 187, 0, 0.7);
 }
-.social-img a:active{
+.social:active{
   color: rgba(255, 187, 0, 0.7);
 }
 
 .page-main-cv {
   display: grid;
-  grid-template-columns:1fr 1fr 0.8fr;
+  grid-template-columns:1fr 1fr 0.8fr 0.1fr;
   grid-template-areas:
-  "name name name"
-  "title1 phone photo"
-  "title2 email photo"
-  "title3 age photo"
-  "title4 place photo"
-  "title5 citizenship photo"
-  "title6 langs photo"
-  "title7 education education"
-  "title8 skill skill";
+  "name name name gif"
+  "title1 phone photo gif"
+  "title2 email photo gif"
+  "title3 age photo gif"
+  "title4 place photo gif"
+  "title5 citizenship photo gif"
+  "title6 langs photo gif"
+  "title7 education education gif"
+  "title8 skill skill gif";
   gap: 20px;
   padding: 20px; 
   margin:20px;  
@@ -247,8 +260,9 @@ body {
 
 .page-main-smth{
   display: grid;
-  grid-template-columns:1fr 1fr 0.8fr;
-  grid-template-areas:"name name name"
+  grid-template-columns:1fr 1fr 0.1fr;
+  grid-template-rows: 0.1fr 1fr;
+  grid-template-areas:"name name photo"
   "bio bio photo";
   gap: 20px;
   padding: 20px; 
@@ -264,6 +278,8 @@ body {
   font-size: 30px;
   border-bottom: 3px solid rgba(0, 0, 0, 0.8); 
   grid-area: name;
+  margin-bottom: auto;
+  margin-top: 0;
 }
 .page-main-smth .photo{
   grid-area: photo;
@@ -271,4 +287,8 @@ body {
 }
 .bio{
   grid-area: bio;
+}
+.gif{
+  margin-left:auto;
+  grid-area: gif;
 }
