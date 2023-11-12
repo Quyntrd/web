@@ -50,7 +50,6 @@ body {
 }
 .page-main {
   display: grid;
-  width: 95%;
   grid-template-columns: 15% 40% 30%;
   grid-template-areas: "avatar name name"
                         "avatar email phone "
@@ -156,7 +155,6 @@ body {
 
 .page-main-cv {
   display: grid;
-  width: 95%;
   grid-template-columns:1fr 1fr 0.8fr;
   grid-template-areas:
   "name name name"
@@ -247,4 +245,30 @@ body {
 
 
 
+.page-main-smth{
+  display: grid;
+  grid-template-columns:1fr 1fr 0.8fr;
+  grid-template-areas:"name name name"
+  "bio bio photo";
+  gap: 20px;
+  padding: 20px; 
+  margin:20px;  
+  padding: 10px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: rgba(50, 53, 53, 0.8);
+  background-color: rgba(0,0,0, 0.3);
+}
 
+.page-main-smth .name{
+  font-size: 30px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.8); 
+  grid-area: name;
+}
+.page-main-smth .photo{
+  grid-area: photo;
+  margin-left:auto;
+}
+.bio{
+  grid-area: bio;
+}
